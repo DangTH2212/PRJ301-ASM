@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
--->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Login Page</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <form action="login" method="POST">
-            Username: <input type="text" name="username"/>
-            <br/>
-            Password: <input type="password" name="password"/> 
-            <br/>
-            <input type="submit" value="Login"/>
-        </form>
+        <div style="width: 300px; padding: 20px; border: 2px solid #000; border-radius: 5px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #f9f9f9;">
+            <h2 style="text-align: center;">Login</h2>
+            <form action="login" method="POST">
+                <label style="display: block; width: 100%; margin-bottom: 10px;">Username:</label>
+                <input type="text" name="username" style="display: block; width: 100%; margin-bottom: 10px;" required/>
+                <br/>
+                <label style="display: block; width: 100%; margin-bottom: 10px;">Password:</label>
+                <input type="password" name="password" style="display: block; width: 100%; margin-bottom: 10px;" required/> 
+                <br/>
+                <input type="submit" value="Login" style="width: 100%; padding: 5px; background-color: #4CAF50; color: white; border: none; cursor: pointer;"/>
+            </form>
+        </div>
     </body>
 </html>
